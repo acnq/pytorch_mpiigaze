@@ -8,7 +8,7 @@ from torch.utils.data import Dataset
 
 class OnePersonDataset(Dataset):
     def __init__(self, person_id_str: str, dataset_path: pathlib.Path,
-                 transform: Callable):
+                    transform: Callable):
         self.transform = transform
 
         # In case of the MPIIGaze dataset, each image is so small that
